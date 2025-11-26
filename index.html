@@ -22,12 +22,10 @@
       font-family: 'Montserrat', Arial, sans-serif;
     }
 
+    /* PAGE WRAPPER — no more flex or 100vh */
     .page {
       max-width: 1000px;
       margin: 0 auto;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
       background: var(--bg);
     }
 
@@ -42,7 +40,7 @@
     }
 
     .banner-image {
-      max-width: 100%;
+      width: 100%;
       height: auto;
       border-radius: 10px;
       display: block;
@@ -73,8 +71,7 @@
 
     /* ===== MAIN CONTENT ===== */
     .content {
-      padding: 18px 16px 26px;
-      flex: 1 0 auto;
+      padding: 18px 16px 18px; /* reduced bottom padding */
     }
 
     .content-inner {
@@ -166,10 +163,9 @@
     /* ===== FOOTER ===== */
     .footer {
       border-top: 1px solid #e1d6ca;
-      padding: 10px 16px 14px;
+      padding: 8px 16px 10px; /* tightened footer spacing */
       background: var(--footer-bg);
       font-size: 11px;
-      flex-shrink: 0;
     }
 
     .footer-inner {
@@ -184,10 +180,6 @@
     .footer-left span {
       display: inline-block;
       margin-right: 8px;
-    }
-
-    .footer-right {
-      text-align: right;
     }
 
     .footer-right a {
@@ -213,9 +205,9 @@
         background: var(--bg) !important;
       }
 
+      /* no min-height needed */
       .page {
         max-width: 100%;
-        min-height: 100vh;
       }
 
       * {
@@ -227,6 +219,7 @@
         display: none !important;
       }
 
+      /* Prevent accidental page breaks */
       .header,
       .content,
       .footer,
@@ -258,7 +251,7 @@
     <div class="content">
       <div class="content-inner">
 
-        <!-- LEFT TEXT -->
+        <!-- LEFT SECTION -->
         <div class="left">
           <h1 class="page-title">HER VOICE 2025 – Attendee RSVP</h1>
 
@@ -289,7 +282,7 @@
           </p>
         </div>
 
-        <!-- RIGHT QR -->
+        <!-- RIGHT QR SECTION -->
         <div class="right">
           <div class="qr-box">
             <h3>Scan to RSVP</h3>
