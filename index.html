@@ -22,7 +22,6 @@
       font-family: 'Montserrat', Arial, sans-serif;
     }
 
-    /* Wrapper so footer sits near bottom */
     .page {
       max-width: 1000px;
       margin: 0 auto;
@@ -203,8 +202,8 @@
 
     /* ===== PRINT OPTIMIZATION ===== */
     @page {
-      size: 8.5in 11in;      /* US Letter */
-      margin: 0;             /* no extra white border */
+      size: 8.5in 11in;
+      margin: 0;
     }
 
     @media print {
@@ -219,27 +218,21 @@
         min-height: 100vh;
       }
 
-      /* Keep colors accurate */
       * {
         -webkit-print-color-adjust: exact !important;
         print-color-adjust: exact !important;
       }
 
-      /* Don’t print the download button */
       .download-wrap {
         display: none !important;
       }
 
-      /* Avoid accidental page breaks */
       .header,
       .content,
       .footer,
       .qr-box {
         page-break-inside: avoid !important;
       }
-
-      /* Browsers may still show URL/date headers;
-         turn OFF “Headers & footers” in the print dialog */
     }
   </style>
 </head>
@@ -286,7 +279,7 @@
             <h3>Event Details</h3>
             <p><strong>Date:</strong> 28th Nov. 2025</p>
             <p><strong>Venue:</strong> Quincy Hall, Minneapolis</p>
-            <p><strong>Contact:</strong> hervoice@gmail.com</p>
+            <p><strong>Contact:</strong> hervoicemn@gmail.com</p>
           </div>
 
           <p class="footnote">
@@ -321,7 +314,7 @@
           <span>#EmpowerHer</span>
         </div>
         <div class="footer-right">
-          Questions? Email <a href="mailto:hervoice@gmail.com">hervoice@gmail.com</a>
+          Questions? Email <a href="mailto:hervoicemn@gmail.com">hervoicemn@gmail.com</a>
         </div>
       </div>
     </div>
