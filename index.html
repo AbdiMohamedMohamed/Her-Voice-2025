@@ -4,23 +4,24 @@
   <meta charset="UTF-8" />
   <title>HER VOICE 2025 – Attendee RSVP</title>
 
-  <!-- Google Font similar to your flyer -->
+  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    /* Global Style */
     body {
       font-family: 'Montserrat', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #fdf7f3;
+      background: #fff9f1;
       color: #333;
     }
 
-    /* Top header bar */
+    /* Header */
     .header {
-      background: linear-gradient(to bottom, #b23c2b, #fdf7f3);
-      padding: 24px 40px 60px;
-      color: #ffffff;
+      background: linear-gradient(to bottom, #b23c2b, #fff9f1);
+      padding: 28px 40px 60px;
+      color: white;
     }
 
     .header-inner {
@@ -30,35 +31,25 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 20px;
     }
 
-    /* Logo area */
     .logo-wrap {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
     }
 
     .logo-image {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      background: #ffffff22;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 22px;
-      font-weight: 700;
+      height: 55px;
+      width: auto;
     }
 
     .logo-text-main {
       font-weight: 700;
+      font-size: 20px;
       letter-spacing: 1px;
-      font-size: 18px;
     }
 
-    /* Title area */
     .title-block {
       text-align: right;
       min-width: 260px;
@@ -66,23 +57,44 @@
 
     .title {
       margin: 0;
-      font-size: 38px;
+      font-size: 40px;
       font-weight: 700;
     }
 
     .subtitle {
       font-size: 18px;
-      margin-top: 4px;
-      margin-bottom: 4px;
+      margin-top: 5px;
     }
 
     .tagline {
       font-size: 14px;
-      margin-top: 4px;
       opacity: 0.9;
     }
 
-    /* Main content */
+    /* Download Button */
+    .download-wrap {
+      text-align: right;
+      margin-top: 10px;
+      margin-right: 40px;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      border: 1px solid #ffffff88;
+      color: white;
+      background: rgba(255,255,255,0.15);
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .download-btn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    /* Content */
     .content {
       padding: 40px 20px 60px;
     }
@@ -93,119 +105,95 @@
       display: flex;
       flex-wrap: wrap;
       gap: 40px;
-      align-items: flex-start;
       justify-content: center;
     }
 
-    .left,
-    .right {
+    .left, .right {
       flex: 1 1 360px;
       min-width: 320px;
     }
 
     h2 {
-      margin-top: 0;
       color: #b23c2b;
       font-size: 24px;
       font-weight: 600;
+      margin-top: 0;
     }
 
     .event-details h3 {
-      margin-bottom: 6px;
-      margin-top: 22px;
       font-size: 18px;
-      font-weight: 600;
       color: #b23c2b;
+      font-weight: 600;
+      margin-top: 20px;
     }
 
     .event-details p {
-      margin: 3px 0;
       font-size: 14px;
+      margin: 4px 0;
     }
 
+    /* QR Box */
     .qr-box {
       text-align: center;
-      padding: 28px 24px;
-      background: #ffffff;
+      padding: 26px 20px;
+      background: white;
       border-radius: 14px;
-      border: 2px solid #e3dcd2;
+      border: 2px solid #ecd8c8;
       box-shadow: 0 4px 10px rgba(0,0,0,0.06);
     }
 
     .qr-box h3 {
-      margin-top: 0;
-      margin-bottom: 16px;
       color: #b23c2b;
       font-size: 20px;
-      font-weight: 600;
+      margin-bottom: 12px;
     }
 
     .qr-box img {
-      width: 220px;
-      height: 220px;
-      display: block;
-      margin: 0 auto 14px;
-    }
-
-    .qr-box p {
-      font-size: 14px;
-      color: #555;
-      margin: 0;
-    }
-
-    .footnote {
-      font-size: 12px;
-      margin-top: 18px;
-      color: #666;
-      line-height: 1.6;
+      width: 230px;
+      height: 230px;
+      margin-bottom: 12px;
     }
 
     /* Footer */
     .footer {
-      border-top: 1px solid #e1d6ca;
-      padding: 16px 20px 26px;
-      background: #f9f0e8;
+      background: #f7ece4;
+      padding: 18px 20px;
+      border-top: 1px solid #e5d4c8;
     }
 
     .footer-inner {
       max-width: 1000px;
       margin: 0 auto;
       display: flex;
-      flex-wrap: wrap;
-      align-items: center;
       justify-content: space-between;
-      gap: 12px;
+      flex-wrap: wrap;
       font-size: 12px;
       color: #555;
     }
 
-    .footer-left span {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    .footer-right {
-      text-align: right;
-    }
-
     .footer-right a {
       color: #b23c2b;
-      text-decoration: none;
       font-weight: 600;
-    }
-
-    .footer-right a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     @media print {
-      /* Make sure it prints nicely */
-      .header {
+
+      @page { 
+        margin: 0.4in;
+      }
+
+      body {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
       }
-      .qr-box {
-        box-shadow: none;
+
+      .header {
+        -webkit-print-color-adjust: exact !important;
+      }
+
+      .download-wrap {
+        display: none !important;
       }
     }
   </style>
@@ -213,20 +201,17 @@
 
 <body>
 
-  <!-- Header Area -->
+  <!-- Header -->
   <div class="header">
     <div class="header-inner">
 
-      <!-- Logo section -->
+      <!-- Logo -->
       <div class="logo-wrap">
-        <!-- If you get a real logo file later, replace this div with:
-             <img src="hervoice-logo.png" alt="Her Voice Logo" class="logo-image" />
-        -->
-        <div class="logo-image">♥</div>
+        <img src="her-voice-logo.png" alt="Her Voice Logo" class="logo-image" />
         <div class="logo-text-main">HER VOICE</div>
       </div>
 
-      <!-- Title section -->
+      <!-- Title -->
       <div class="title-block">
         <h1 class="title">HER VOICE 2025</h1>
         <div class="subtitle">Attendee RSVP</div>
@@ -236,18 +221,22 @@
     </div>
   </div>
 
+  <!-- Download Button -->
+  <div class="download-wrap">
+    <a href="HerVoice2025_RSVP.pdf" download class="download-btn">⬇ Download RSVP PDF</a>
+  </div>
+
   <!-- Main Content -->
   <div class="content">
     <div class="content-inner">
 
-      <!-- Left Section -->
+      <!-- Left Content -->
       <div class="left">
         <h2>A Night of Celebration & Empowerment</h2>
-
         <p>
           Join us on <strong>November 28, 2025</strong> at 
           <strong>Quincy Hall, Minneapolis</strong> for an unforgettable evening
-          honoring Somali women—their stories, strength, and leadership.
+          honoring Somali women — their stories, strength, and leadership.
         </p>
 
         <p>
@@ -259,28 +248,22 @@
           <h3>Event Details</h3>
           <p><strong>Date:</strong> 28th Nov. 2025</p>
           <p><strong>Venue:</strong> Quincy Hall, Minneapolis</p>
-          <p><strong>Contact:</strong> hervoicemn@gmail.com · 612-423-5619</p>
+          <p><strong>Contact:</strong> hervoice@gmail.com</p>
         </div>
 
         <p class="footnote">
           Your contact information will only be used to confirm attendance
           and share HER VOICE event updates. You may opt out of future
-          communication through the RSVP form at any time.
+          communication at any time.
         </p>
       </div>
 
-      <!-- Right Section (QR Code) -->
+      <!-- QR Code -->
       <div class="right">
         <div class="qr-box">
           <h3>Scan to RSVP</h3>
-
-          <!-- QR Code image (must be named qrcode.png in your repo) -->
           <img src="qrcode.png" alt="HER VOICE 2025 RSVP QR Code" />
-
-          <p>
-            Open your phone camera and point it at the QR code to access 
-            the online RSVP form.
-          </p>
+          <p>Open your phone camera and scan to complete your RSVP.</p>
         </div>
       </div>
 
@@ -290,14 +273,11 @@
   <!-- Footer -->
   <div class="footer">
     <div class="footer-inner">
-      <div class="footer-left">
-        <span>#HerVoice2025</span>
-        <span>#DreamDareDo</span>
-        <span>#SomaliWomen</span>
-        <span>#EmpowerHer</span>
+      <div>
+        #HerVoice2025 &nbsp; #DreamDareDo &nbsp; #SomaliWomen &nbsp; #EmpowerHer
       </div>
       <div class="footer-right">
-        Questions? Email <a href="mailto:hervoicemn@gmail.com">hervoicemn@gmail.com</a>
+        Questions? <a href="mailto:hervoice@gmail.com">hervoice@gmail.com</a>
       </div>
     </div>
   </div>
